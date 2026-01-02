@@ -19,7 +19,7 @@ class speaki_cry(rumps.App):
         ]
         
         self.icon = self.icons[0]  # 초기 아이콘 설정
-        self.menu = ["Quit"]
+        self.menu = ["About", None ,"Quit"]
         self.is_crying = True
         self.animation_frame = 0
 
@@ -28,6 +28,18 @@ class speaki_cry(rumps.App):
         if self.is_crying:
             self.icon = self.icons[self.animation_frame % len(self.icons)]
             self.animation_frame += 1
+
+    @rumps.clicked("About")
+    def about(self, _):
+        rumps.alert(
+            title="Speaki Is Not Stupid",
+            message="Speaki - Menu Bar Animation\n\n"
+                    "Version: 1.0.0\n"
+                    "Created by: 김민석 (Minseok Kim)\n"
+                    "GitHub: github.com/Danmark-Jajang/SpeakiIsNotStupid\n\n"
+                    "© 2025 All rights reserved",
+            ok="확인"
+        )
 
 if __name__ == "__main__":
     app = speaki_cry()
