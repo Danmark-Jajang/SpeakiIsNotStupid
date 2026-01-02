@@ -17,8 +17,8 @@ macOS 메뉴바에 귀여운 스핔이를 구경하세요
 ## 설치 1 (직접 빌드하기)
 ```bash
 # 저장소 클론
-git clone https://github.com/Danmark-Jajang/SpeakyIsNotStupid.git
-cd SpeakyIsNotStupid
+git clone https://github.com/Danmark-Jajang/SpeakiIsNotStupid.git
+cd SpeakiIsNotStupid
 
 # 필요한 패키지 설치
 pip3 install rumps py2app
